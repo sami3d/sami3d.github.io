@@ -1,0 +1,210 @@
+@charset "UTF-8";
+/* 
+CSS INDEX
+=========
+01.	IMPORT FILES
+02.	GENERAL
+03.	TYPOGRAPHY
+04.	HEADER
+05.	INTRO SECTION
+06.	PORTFOLIO 1, 2, 3
+07.	MY SKILLS
+08.	PORTFOLIO 2 (optional)
+09.	PORTFOLIO 3 (optional)
+10.	SOCIAL LINKS
+11.	FOOTER
+*/
+/* IMPORT FILES */
+/* GENERAL SETTINGS and CLASSES*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  color: #454545;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/*TYPOGRAPHY SETTINGS*/
+h1 {
+  font-family: 'Roboto', serif;
+  font-weight: 700;
+  font-weight: 26px;
+  line-height: 39px;
+}
+
+h2 {
+  font-weight: 22px;
+  line-height: 26px;
+}
+
+h3 {
+  font-weight: 18px;
+  line-height: 24px;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+/* VARIABLES */
+header {
+  background: url(../images/background.svg) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  /* take viewports height 100% */
+  min-height: 100%;
+  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh;
+  /* give flex layout and center them both vertically and horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 439px) {
+  header {
+    background-image: none !important;
+  }
+}
+
+header .main-logo {
+  height: 400px;
+}
+
+/* INRO SECTION */
+#intro {
+  background-color: #fbfbfb;
+  /* give flex layout and center them both vertically and horizontally */
+  display: flex;
+  align-items: center;
+  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100%;
+  min-height: 100vh;
+}
+
+/* PORTFOLIO 1,2,3 */
+#portfolio-1, #portfolio-2, #portfolio-3 {
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+  /* take away all the margin from the row */
+  /* take away all the padding from the columns */
+  /*-----------------------------*/
+  /***** HOVER EFFECT: SADIE *****/
+  /*-----------------------------*/
+}
+
+#portfolio-1 .row .no-gutter, #portfolio-2 .row .no-gutter, #portfolio-3 .row .no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#portfolio-1 .row.no-gutter [class*='col-'],
+#portfolio-1 .row.no-gutter [class*='col-'], #portfolio-2 .row.no-gutter [class*='col-'],
+#portfolio-2 .row.no-gutter [class*='col-'], #portfolio-3 .row.no-gutter [class*='col-'],
+#portfolio-3 .row.no-gutter [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#portfolio-1 figure.effect-sadie figcaption::before, #portfolio-2 figure.effect-sadie figcaption::before, #portfolio-3 figure.effect-sadie figcaption::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-color: #3b449a;
+  content: '';
+  opacity: 0;
+  -webkit-transform: translate3d(0, 1%, 0);
+  transform: translate3d(0, 1%, 0);
+}
+
+#portfolio-1 figure.effect-sadie h3, #portfolio-2 figure.effect-sadie h3, #portfolio-3 figure.effect-sadie h3 {
+  position: absolute;
+  top: 54%;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.35s, color 0.35s;
+  transition: transform 0.35s, color 0.35s;
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+}
+
+#portfolio-1 figure.effect-sadie figcaption::before, #portfolio-2 figure.effect-sadie figcaption::before, #portfolio-3 figure.effect-sadie figcaption::before {
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+#portfolio-1 figure.effect-sadie:hover h3, #portfolio-2 figure.effect-sadie:hover h3, #portfolio-3 figure.effect-sadie:hover h3 {
+  color: #fff;
+  opacity: 1;
+  -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
+  transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
+}
+
+#portfolio-1 figure.effect-sadie:hover figcaption::before, #portfolio-2 figure.effect-sadie:hover figcaption::before, #portfolio-3 figure.effect-sadie:hover figcaption::before {
+  color: #fff;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+#portfolio-1 .effect-sadie a h3:hover, #portfolio-2 .effect-sadie a h3:hover, #portfolio-3 .effect-sadie a h3:hover {
+  color: #6C75CC !important;
+}
+
+/* MY SKILLS */
+#skills {
+  /* give flex layout and center them both vertically and horizontally */
+  display: flex;
+  align-items: center;
+  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100%;
+  min-height: 100%;
+  /* top bottom alignment */
+  padding: 80px 0 100px 0;
+}
+
+#skills h1 {
+  line-height: 44px;
+}
+
+#skills ul {
+  list-style-type: none;
+  -webkit-padding-start: 22px;
+  padding-start: 22px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-weight: 26px;
+  line-height: 36px;
+}
+
+#skills ul li:before {
+  position: absolute;
+  left: 0;
+  content: "•";
+  font-size: 25px;
+  color: #D8D8D8;
+}
+
+/* LINKS */
+#links {
+  padding: 50px 0;
+}
+
+#footer {
+  background-color: #050708;
+  display: flex;
+  align-items: center;
+  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100%;
+  min-height: 100vh;
+}

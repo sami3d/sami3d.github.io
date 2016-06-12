@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- original colors fill:#313E96 and fill:#07090A -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+
+	<!ENTITY st0 "fill:#fff;">
+	<!ENTITY st1 "fill:#fff;">
+]>
+<svg version="1.1" id="syed_sami_logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="388.003px" height="407.999px" viewBox="90.161 0 388.003 407.999"
+	 style="enable-background:new 90.161 0 388.003 407.999;" xml:space="preserve">
+<g id="icon">
+	<polygon id="l-r-border" style="&st1;" points="409.518,329.769 286.057,329.769 266.212,343.189 422.938,343.189 422.938,237.194 
+		409.518,246.272 	"/>
+	<polygon id="l-b-border" style="&st1;" points="158.096,329.769 158.096,253.429 144.675,254.186 144.675,343.189 177.419,343.189 
+		185.706,329.769 	"/>
+	<polygon id="r-t-border" style="&st1;" points="409.518,78.348 409.518,154.772 422.938,154.015 422.938,64.927 390.864,64.927 
+		382.592,78.348 	"/>
+	<polygon id="l-t-border" style="&st1;" points="158.096,78.348 282,78.348 301.854,64.927 144.675,64.927 144.675,171.169 
+		158.096,162.099 	"/>
+	<polygon id="s_spark" style="&st0;" points="478.164,186.347 137.819,205.519 373.689,46.072 288.962,183.521 456.476,173.953 
+		477.973,159.42 313.886,168.674 417.88,0 90.161,221.514 430.451,202.499 194.614,361.927 279.3,224.644 111.872,234.083 
+		90.378,248.618 254.481,239.485 150.425,407.999 	"/>
+</g>
+</svg>
